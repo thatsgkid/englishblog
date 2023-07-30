@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 2rem;
+  width: 95%;
+}
+.app {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  margin: 4rem auto;
+  margin-top: 0%;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.logo {
+  height: 84px;
+  width: 84px;
+}
+
+.show-modal1 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background:linear-gradient(to top left, #ffb003, #ffcb03);
+  color: #444;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0px 2px 1px 1px #444;
+  height: 50%;
+  width: 90%;
+}
+.show-modal2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background: linear-gradient(to top left, #39b385, #9be15d);
+  color: #444;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0px 2px 1px 1px #444;
+  height: 50%;
+  width:90%;
+}
+.show-modal3 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background:linear-gradient(to top left, #e52a5a, #ff585f);
+  color: #444;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0px 2px 1px 1px #444;
+  height: 50%;
+  width: 90%;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* -------------------------- */
+/* A bunch of content header*/
+
+.balance__label {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: -0.2rem;
+}
+
+.balance__date {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.balance__value {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+/*Done header*/
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-body {
+  max-height: calc(80vh - 210px);
+  overflow-y: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
